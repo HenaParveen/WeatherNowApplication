@@ -1,0 +1,27 @@
+@import "./variables.css";
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.forecast-container .forecast-card {
+  background-color: var(--card-bg);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 80px;
+  text-align: center;
+}
+
+.forecast-container .forecast-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.forecast-container .forecast-card img {
+  width: 50px;
+}

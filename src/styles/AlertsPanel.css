@@ -1,0 +1,32 @@
+@import "./variables.css";
+
+.alerts-panel {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.alerts-panel h3 {
+  color: var(--danger-color);
+  margin-bottom: 10px;
+}
+
+.alerts-panel .alert-item {
+  background: rgba(220, 53, 69, 0.1);
+  border-left: 4px solid var(--danger-color);
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.alerts-panel .alert-item strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.alerts-panel .alert-item p {
+  font-size: 0.9rem;
+}

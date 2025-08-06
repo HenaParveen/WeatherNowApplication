@@ -1,0 +1,20 @@
+@import "./variables.css";
+
+.health-info {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.health-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.health-info p {
+  margin: 5px 0;
+}

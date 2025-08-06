@@ -1,0 +1,27 @@
+@import "./variables.css";
+
+.hourly-forecast {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.hourly-forecast .hour-card {
+  background-color: var(--card-bg);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  min-width: 80px;
+  text-align: center;
+}
+
+.hourly-forecast .hour-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.hourly-forecast .hour-card img {
+  width: 40px;
+}

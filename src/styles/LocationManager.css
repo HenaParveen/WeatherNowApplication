@@ -1,0 +1,33 @@
+@import "./variables.css";
+
+.location-manager {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.location-manager .location-item {
+  background-color: var(--card-bg);
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.location-manager .location-item span {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.location-manager .location-item button {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  cursor: pointer;
+  font-size: 1rem;
+}
