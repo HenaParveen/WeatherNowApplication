@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_KEY = "83f2dc9c3a9549e21e7fc790b0823d28";
-const BASE_URL = "https://api.openweathermap.org/data/3.0";
+const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 export const getWeatherByCity = async (city, units = "metric") => {
   const { data } = await axios.get(`${BASE_URL}/weather`, {
@@ -39,7 +39,7 @@ export const getAirQuality = async (lat, lon) => {
 };
 
 export const getWeatherAlerts = async (lat, lon) => {
-  const { data } = await axios.get(`${BASE_URL}/onecall`, {
+  const { data } = await axios.get(`${BASE_URL}/weather`, {
     params: { lat, lon, appid: API_KEY },
   });
   return data.alerts || [];
